@@ -76,7 +76,7 @@ userSchema.methods.generateAccessToken = function () {
     },
     process.env.ACCESS_TOKEN_SECRET,
     {
-      expriesIn: process.env.ACCESS_TOKEN_EXPIRY,
+      expiresIn: process.env.ACCESS_TOKEN_EXPIRY,
     }
   );
 };
@@ -87,7 +87,7 @@ userSchema.methods.generateRefreshToken = function () {
         },
         process.env.REFREH_TOKEN_SECRET,
         {
-          expriesIn: process.env.REFREH_TOKEN_EXPIRY,
+          expiresIn: process.env.REFREH_TOKEN_EXPIRY,
         }
       );
 };
